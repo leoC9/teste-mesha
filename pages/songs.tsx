@@ -7,7 +7,7 @@ import styles from '../styles/Songs.module.css'
 
 const songs = () => {
     const [data, setData] = useState<object>()
-    const options = {
+    const options:any = {
         method: 'GET',
         url: 'https://shazam.p.rapidapi.com/search',
         params: {term: 'pop', locale: 'en-US', offset: '0', limit: '5'},
