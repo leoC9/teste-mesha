@@ -5,7 +5,7 @@ import Head from 'next/head'
 import axios from 'axios';
 import styles from '../styles/Songs.module.css'
 
-const songs = () => {
+const Songs = () => {
     const [data, setData] = useState<object>()
     const options:any = {
         method: 'GET',
@@ -53,4 +53,4 @@ const songs = () => {
     )
 }
 
-export default songs
+export default Songs

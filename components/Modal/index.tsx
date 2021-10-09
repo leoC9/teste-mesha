@@ -41,8 +41,8 @@ const SongModal = ({options}: {options: any}) => {
         <div className={styles.songModal}>
             <h1 className={styles.title}>Seus sons Climatizados!</h1>
             <div className={styles.cardGrid}>
-                {options?.tracks?.hits?.map((item: any) => (
-                    <Card type='song' songTitle={item.track.title} subTitle={item.track.subtitle} link={item.track.url} image={item.track.images.background}/>
+                {options?.tracks?.hits?.map((item: any, i:any) => (
+                    <Card type='song' key={i} songTitle={item.track.title} subTitle={item.track.subtitle} link={item.track.url} image={item.track.images.background}/>
                 ))}       
             </div>
         {/* <Button link='/songs' title='Clique aqui'/>
