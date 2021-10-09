@@ -1,0 +1,47 @@
+.modalBg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: transparent;
+    margin: 0 auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+}
+.genreModal{
+    display: flex;
+    width: 100%;
+    max-width: 40rem;
+    flex-direction: column;
+    margin-top: 6rem;
+    margin-right: 15px;
+    align-items: center;
+    padding: 1rem 2rem;
+    height: 57vh;
+    background: #575761D0;
+    border-radius: 15px;
+}
+.songModal{
+    display: flex;
+    width: 100%;
+    max-width: 70rem;
+    flex-direction: column;
+    margin-top: 0rem;
+    margin-right: 15px;
+    align-items: center;
+    padding: 1rem 2rem;
+    height: 80vh;
+    background: #575761D0;
+    border-radius: 15px;
+}
+.cardGrid{
+    justify-items: center;
+    display: grid;
+    column-gap: 25px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+}
